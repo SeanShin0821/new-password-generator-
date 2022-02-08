@@ -10,15 +10,21 @@ var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 //define a function first 
 function generatePassword(){
-    console.log("Welcome, you clicked!")
+    console.log("Welcome to the password generator!")
     //prompt user the password criteria info 
       //length 8-128, lower,upper,number,special char.
       //Generate password 
       //Display password 
-
-
     return "Generated password space";
 }
+
+//Variable declaration - 
+var confirmLength ="";
+var confirmSpecialCharacter; 
+var confirmNumericCharacter;
+var confirmUppercase;
+var confirmLowercase;
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
