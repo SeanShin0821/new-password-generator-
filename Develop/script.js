@@ -3,13 +3,10 @@
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+//define a function first 
+function generatePassword({
 
-var passwordlength;
-var confirmlower;
-var confirmupper; 
-var confirmnumber;
-var confirmspeical;
-c
+})
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
