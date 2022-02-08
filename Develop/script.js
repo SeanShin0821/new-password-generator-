@@ -43,6 +43,15 @@ var confirmNumericCharacter = confirm ("Click OK to add numbers");
 var confirmLowercase = confirm ("Click OK to add lowercase");
 var confirmUppercase = confirm ("Click OK to add Uppercase");
 
+//Provide loop for wrong selection 
+while (confirmUppercase === false && confirmLowercase === false && confirmSpecialCharacter === false && confirmNumericCharacter === false ){
+  alert("You are mandated to choose one!");
+  var confirmSpecialCharacter = confirm("Click OK to add special Char");
+  var confirmNumericCharacter = confirm ("Click OK to add numbers");
+  var confirmLowercase = confirm ("Click OK to add lowercase");
+  var confirmUppercase = confirm ("Click OK to add Uppercase");
+
+}
 
 
 
