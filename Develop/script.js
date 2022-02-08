@@ -3,9 +3,16 @@
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
+//Various elements for the password 
+var number = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 //define a function first 
 function generatePassword(){
     console.log("Welcome, you clicked!")
+    //prompt user the password criteria info 
+      //length 8-128, lower,upper,number,special char.
+      //Generate password 
+      //Display password 
+
 
     return "Generated password space";
 }
