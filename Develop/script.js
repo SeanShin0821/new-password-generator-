@@ -6,6 +6,8 @@ var generateBtn = document.querySelector("#generate");
 //define a function first 
 function generatePassword(){
     console.log("Welcome, you clicked!")
+
+    return "Generated password space";
 }
 // Write password to the #password input
 function writePassword() {
