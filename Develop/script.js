@@ -34,8 +34,16 @@ while(confirmLength <= 7 || confirmLength >= 51) {
   var confirmLength = (prompt("How many character would you like for the password"));
 }}
 
-//notify user about the char length 
+//Notify user about the char length 
 alert("Password will contain ${confirmLength} characters");
+
+//Acquire special characteristics of the password 
+var confirmSpecialCharacter = confirm("Click OK to add special Char");
+var confirmNumericCharacter = confirm ("Click OK to add numbers");
+var confirmLowercase = confirm ("")
+var confirmUppercase = confirm ("")
+
+
 
 
 // Write password to the #password input
