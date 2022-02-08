@@ -32,9 +32,11 @@ function generatePassword(){
 while(confirmLength <= 7 || confirmLength >= 51) {
   alert("Please choose between 8-50 char");
   var confirmLength = (prompt("How many character would you like for the password"));
-}
+}}
 
-}
+//notify user about the char length 
+alert("Password will contain ${confirmLength} characters");
+
 
 // Write password to the #password input
 function writePassword() {
