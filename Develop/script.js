@@ -40,8 +40,8 @@ alert("Password will contain ${confirmLength} characters");
 //Acquire special characteristics of the password 
 var confirmSpecialCharacter = confirm("Click OK to add special Char");
 var confirmNumericCharacter = confirm ("Click OK to add numbers");
-var confirmLowercase = confirm ("")
-var confirmUppercase = confirm ("")
+var confirmLowercase = confirm ("Click OK to add lowercase");
+var confirmUppercase = confirm ("Click OK to add Uppercase");
 
 
 
