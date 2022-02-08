@@ -25,6 +25,17 @@ var confirmNumericCharacter;
 var confirmUppercase;
 var confirmLowercase;
 
+//Asking user regarding the password length 
+function generatePassword(){
+  var confirmLength = (prompt("Choose your character length for Password"));
+//Using literation function 
+while(confirmLength <= 7 || confirmLength >= 51) {
+  alert("Please choose between 8-50 char");
+  var confirmLength = (prompt("How many character would you like for the password"));
+}
+
+}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
