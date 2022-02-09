@@ -2,8 +2,10 @@
 //The password generator will provide a password up to 50 char based on which user speicifies. 
 
 // Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
-//Various elements for the password 
+let generateBtn = document.querySelector("#generate");
+//Various elements for the password and declare function 
+
+function generatePassword(){}
 var number = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 var specialChar = ["!", "%", "&", ",", "*", "+", "-", ".", "/", "<", ">", "?","~"];
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -17,37 +19,29 @@ var confirmNumericCharacter = number ;
 var confirmUppercase = upperCase ;
 var confirmLowercase = lowerCase ;
 
-
-//Asking user regarding the password length 
-function generatePassword(){
-  var confirmLength = (prompt("Choose your character length for Password"));
-//Using literation function 
-while(confirmLength <= 7 || confirmLength >= 51) {
-  alert("Please choose between 8-50 char");
-  var confirmLength = (prompt("How many character would you like for the password"));
-}}
-
 //Acquire special characteristics of the password 
 var confirmSpecialCharacter = confirm("Click OK to add special Char");
 var confirmNumericCharacter = confirm ("Click OK to add numbers");
 var confirmLowercase = confirm ("Click OK to add lowercase");
 var confirmUppercase = confirm ("Click OK to add Uppercase");
+var confirmLength = (prompt("Choose your character length for Password"));
 
-//Provide loop for wrong selection 
-while (confirmUppercase === false && confirmLowercase === false && confirmSpecialCharacter === false && confirmNumericCharacter === false ){
-  alert("You are mandated to choose one!");
-  var confirmSpecialCharacter = confirm("Click OK to add special Char");
-  var confirmNumericCharacter = confirm ("Click OK to add numbers");
-  var confirmLowercase = confirm ("Click OK to add lowercase");
-  var confirmUppercase = confirm ("Click OK to add Uppercase");
-}
+//Asking user regarding the password length 
+function generatePassword(){
+  var Length = (prompt("Choose your character length for Password"));
+//Using literation function 
+while(Length <= 7 || Length >= 128) {
+  alert("Please choose between 8-128 char");
+  var Length = (prompt("How many character would you like for the password"));
+}}
+
 //Generating password ! 
 var generatePassword = function(specialChar, lowerCase, upperCase, number) {
   if (specialChar && lowerCase && upperCase && number){
 
-    password = "";
     for (var i = 0; i < length; i++) {
-      password += all.charAt(Math.floor(Math.random()*all.length));    
+      password = password + length.charAt(Math.random()* Math.floor(length-1));
+      password = "";
     }
     return password;
   }
