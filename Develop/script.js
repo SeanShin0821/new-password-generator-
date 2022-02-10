@@ -46,7 +46,7 @@ var generatePassword = function(specialChar, lowerCase, upperCase, number) {
     return password;
   }
 }
-
+//new
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
